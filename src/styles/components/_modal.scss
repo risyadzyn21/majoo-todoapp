@@ -1,0 +1,74 @@
+@use "../abstracts/" as *;
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.753);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.modalContainer {
+  width: 200px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 150px;
+      height: 30px;
+      margin: 10px;
+      border: none;
+      background-color: cornflowerblue;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.edit-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-to-do {
+  min-height: 30px;
+  border-radius: 5px;
+  border: none;
+  border-right: 3px solid $color-primary-dark;
+  border-left: 3px solid $color-primary-dark;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

@@ -1,0 +1,59 @@
+@use "../abstracts/" as *;
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  gap: 10px;
+}
+
+.complete {
+  border-left: 5px solid $indicator-green;
+}
+
+.uncomplete {
+  border-left: 5px solid $indicator-red;
+}
+
+.todo-item {
+  display: flex;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  .todo-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .todo-title {
+      font-weight: bold;
+    }
+
+    .todo-desc {
+      align-items: flex-start;
+    }
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+
+    .icon-item {
+      padding: 10px;
+    }
+
+    .edit:hover,
+    .delete:hover {
+      color: $color-primary;
+      transform: scale(1.5);
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+  }
+}
