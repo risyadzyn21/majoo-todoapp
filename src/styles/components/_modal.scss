@@ -34,7 +34,7 @@
       height: 30px;
       margin: 10px;
       border: none;
-      background-color: cornflowerblue;
+      background-color: $color-primary;
       color: white;
       border-radius: 8px;
       cursor: pointer;
@@ -55,7 +55,7 @@
 }
 
 #cancelBtn {
-  background-color: crimson;
+  background-color: $indicator-red;
 }
 
 .edit-modal-form {

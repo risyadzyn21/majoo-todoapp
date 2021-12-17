@@ -48,6 +48,7 @@ function Modal({ setOpenModal, todo }) {
             onChange={handleInput}
             placeholder={todo.title}
             className='input-to-do'
+            required={true}
           />
           <input
             type="text"
@@ -55,6 +56,7 @@ function Modal({ setOpenModal, todo }) {
             onChange={handleInputDesc}
             placeholder={todo.description}
             className='input-to-do'
+            required={true}
           />
 
           <div className="footer">

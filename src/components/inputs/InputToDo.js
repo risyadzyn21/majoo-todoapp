@@ -39,6 +39,7 @@ function InputToDo() {
           onChange={handleInput}
           placeholder='To Do Title'
           className='input-to-do'
+          required={true}
         />
         <input
           type="text"
@@ -46,6 +47,7 @@ function InputToDo() {
           onChange={handleInputDesc}
           placeholder='To Do Description'
           className='input-to-do'
+          required={true}
         />
       </div>
 
