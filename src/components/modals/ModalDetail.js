@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { format } from 'date-fns'
 import { deleteTodo, editTodo } from "../../redux/actions/actions";
 
-function Modal({ setOpenModal, todo }) {
+function ModalDetail({ setOpenModal, todo }) {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [descriptions, setDescriptions] = useState('')
@@ -82,4 +82,4 @@ function Modal({ setOpenModal, todo }) {
   );
 }
 
-export default Modal;
+export default ModalDetail;

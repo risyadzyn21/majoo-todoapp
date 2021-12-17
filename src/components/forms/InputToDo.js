@@ -31,7 +31,6 @@ function InputToDo() {
 
   return (
     <form onSubmit={handleSubmit} className='form-to-do'>
-
       <div className='todo-input-container'>
         <input
           type="text"
