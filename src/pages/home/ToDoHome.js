@@ -1,5 +1,5 @@
 
-import InputToDo from "../../components/inputs/InputToDo"
+import InputToDo from "../../components/forms/InputToDo"
 import TodoList from "../../components/to-do-lists/ToDoList"
 import majooLogo from '../../assets/majoo_logo_icon_2.png'
 
